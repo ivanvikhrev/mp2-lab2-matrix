@@ -1,0 +1,15 @@
+﻿  sample_matrix.cpp
+c:\myprojects\mp2-lab2-matrix\include\utmatrix.h(181): error C2676: бинарный "+=": "TVector<ValType>" не определяет этот оператор или преобразование к типу приемлемо к встроенному оператору
+          with
+          [
+              ValType=int
+          ]
+  c:\myprojects\mp2-lab2-matrix\include\utmatrix.h(176): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\myprojects\mp2-lab2-matrix\include\utmatrix.h(314): note: выполняется компиляция ссылки на экземпляр шаблон функции "TVector<TVector<ValType>> TVector<TVector<ValType>>::operator +(const TVector<TVector<ValType>> &)"
+          with
+          [
+              ValType=int
+          ]
+  c:\myprojects\mp2-lab2-matrix\include\utmatrix.h(250): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\myprojects\mp2-lab2-matrix\samples\sample_matrix.cpp(14): note: выполняется компиляция ссылки на экземпляр шаблон функции "TMatrix<int>::TMatrix(int)"
+  c:\myprojects\mp2-lab2-matrix\samples\sample_matrix.cpp(14): note: выполняется компиляция ссылки на экземпляр шаблон класс "TMatrix<int>"
