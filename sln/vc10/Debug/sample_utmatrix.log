@@ -1,15 +1,5 @@
-﻿  sample_matrix.cpp
-c:\myprojects\mp2-lab2-matrix\include\utmatrix.h(181): error C2676: бинарный "+=": "TVector<ValType>" не определяет этот оператор или преобразование к типу приемлемо к встроенному оператору
-          with
-          [
-              ValType=int
-          ]
-  c:\myprojects\mp2-lab2-matrix\include\utmatrix.h(176): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
-  c:\myprojects\mp2-lab2-matrix\include\utmatrix.h(314): note: выполняется компиляция ссылки на экземпляр шаблон функции "TVector<TVector<ValType>> TVector<TVector<ValType>>::operator +(const TVector<TVector<ValType>> &)"
-          with
-          [
-              ValType=int
-          ]
-  c:\myprojects\mp2-lab2-matrix\include\utmatrix.h(250): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
-  c:\myprojects\mp2-lab2-matrix\samples\sample_matrix.cpp(14): note: выполняется компиляция ссылки на экземпляр шаблон функции "TMatrix<int>::TMatrix(int)"
-  c:\myprojects\mp2-lab2-matrix\samples\sample_matrix.cpp(14): note: выполняется компиляция ссылки на экземпляр шаблон класс "TMatrix<int>"
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (gtest.vcxproj, test_utmatrix.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  sample_matrix.cpp
+sample_matrix.obj : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/SAFESEH"
+  sample_utmatrix.vcxproj -> C:\MyProjects\mp2-lab2-matrix\sln\vc10\Debug\sample_utmatrix.exe
+  sample_utmatrix.vcxproj -> C:\MyProjects\mp2-lab2-matrix\sln\vc10\Debug\sample_utmatrix.pdb (Full PDB)

@@ -169,7 +169,7 @@ TVector<ValType> TVector<ValType>::operator+(const TVector<ValType> &v)
 	{
 		TVector<ValType> res(*this);
 		for (int i = 0; i < Size; i++)
-			res.pVector[i] = res.pVector[i] + v.pVector[i]; //res.pVector[i] +=  v.pVector[i];
+		res.pVector[i] = res.pVector[i] + v.pVector[i];//res.pVector[i] +=  v.pVector[i];
 		return res;
 	}
 	else
@@ -239,8 +239,8 @@ TMatrix<ValType>::TMatrix(int s): TVector<TVector<ValType> >(s)
 {
 	if (s >= Size && s <= MAX_MATRIX_SIZE)
 	{
-		Size = s;
-		pVector = new TVector<ValType>[Size];
+		//Size = s;
+		//pVector = new TVector<ValType>[Size];
 		for (int i = 0; i < Size; i++)
 			pVector[i] = TVector<ValType>(Size - i, i);
 	}
@@ -251,10 +251,10 @@ TMatrix<ValType>::TMatrix(int s): TVector<TVector<ValType> >(s)
 template <class ValType> // конструктор копирования
 TMatrix<ValType>::TMatrix(const TMatrix<ValType> &mt):TVector<TVector<ValType> >(mt) 
 {
-	Size = mt.Size;
-	pVector = new TVector<ValType>[Size];
-	for (int i = 0; i < Size; i++)
-		pVector[i] = mt.pVector[i];
+	//Size = mt.Size;
+	//pVector = new TVector<ValType>[Size];
+	//for (int i = 0; i < Size; i++)
+	//	pVector[i] = mt.pVector[i];
 }
 
 template <class ValType> // конструктор преобразования типа
@@ -264,7 +264,7 @@ TMatrix<ValType>::TMatrix(const TVector<TVector<ValType> > &mt):
 template <class ValType> // сравнение
 bool TMatrix<ValType>::operator==(const TMatrix<ValType> &mt) const
 {
-	return TVector<TVector<ValType>>::operator==(mt);
+	return TVector<TVector<ValType>>::operator==(mt); // m1 == mt
 } /*-------------------------------------------------------------------------*/
 
 template <class ValType> // сравнение
@@ -278,14 +278,15 @@ bool TMatrix<ValType>::operator!=(const TMatrix<ValType> &mt) const
 template <class ValType> // присваивание
 TMatrix<ValType>& TMatrix<ValType>::operator=(const TMatrix<ValType> &mt)
 {
-	if (this != &mt)
+	TVector<TVector<ValType>>::operator=(mt);
+	/*if (this != &mt)
 	{
 		delete[] pVector;
 		Size = mt.Size;
 		pVector = new TVector<ValType>[Size];
 		for (int i = 0; i < Size; i++)
 			pVector[i] = mt.pVector[i];
-	}
+	}*/
 	return *this;
 } /*-------------------------------------------------------------------------*/
 
