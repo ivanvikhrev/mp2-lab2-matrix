@@ -1,5 +1,0 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (gtest.vcxproj, test_utmatrix.vcxproj).  Это может привести к ошибкам очистки и перестроения.
-  sample_matrix.cpp
-sample_matrix.obj : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/SAFESEH"
-  sample_utmatrix.vcxproj -> C:\MyProjects\mp2-lab2-matrix\sln\vc10\Debug\sample_utmatrix.exe
-  sample_utmatrix.vcxproj -> C:\MyProjects\mp2-lab2-matrix\sln\vc10\Debug\sample_utmatrix.pdb (Full PDB)
